@@ -1,9 +1,26 @@
+import Head from "next/head";
+
 export default function Index() {
   return (
-    <p>
-      To test the CORS route, open the console in a new tab on a different
-      domain and make a POST / GET / OPTIONS request to <b>/api/cors</b>. Using
-      a different method from those mentioned will be blocked by CORS
-    </p>
-  )
+    <div>
+      <Head>
+        <title>TibiaLabs API v2</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <p>
+        <h1>TibiaLabs API v2</h1>
+        <p>
+          Hey, you won't find anything here. We encourage you to access{" "}
+          <a href="https://tibialabs.com" target="_blank">
+            our website
+          </a>{" "}
+          or even our awesome{" "}
+          <a href="https://docs.tibialabs.com" target="_blank">
+            Documentation
+          </a>
+          .
+        </p>
+      </p>
+    </div>
+  );
 }
