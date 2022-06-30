@@ -1,4 +1,3 @@
-// const cheerio = require("cheerio");
 function getStringBetween(str, start, end) {
   const result = str.match(new RegExp(start + "(.*)" + end));
   return result[1];
