@@ -1,6 +1,6 @@
 import Cors from "cors";
 import initMiddleware from "../../../lib/init-middleware";
-import BoostedCreature from "../../../services/getBoostedCreature";
+import BoostedCreature from "../../../services/GetBoostedCreature";
 
 const cors = initMiddleware(
   Cors({
