@@ -11,5 +11,6 @@ const cors = initMiddleware(
 export default async function handler(req, res) {
   await cors(req, res);
   const bossName = await BoostedBoss();
+  res.setHeader("Cache-Control", "s-maxage=600, stale-while-revalidate=60");
   res.send(bossName);
 }

@@ -11,5 +11,6 @@ const cors = initMiddleware(
 export default async function handler(req, res) {
   await cors(req, res);
   const currentCity = await RashidCity();
+  res.setHeader("Cache-Control", "s-maxage=300");
   res.send(currentCity);
 }
