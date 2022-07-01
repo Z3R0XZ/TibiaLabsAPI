@@ -1,4 +1,3 @@
-// db.js
 import mysql from "serverless-mysql";
 const db = mysql({
   config: {

@@ -15,7 +15,14 @@ export default async function handler(req, res) {
       query: "SELECT * FROM boostedcreature ORDER BY id DESC",
     });
     res.setHeader("Cache-Control", "s-maxage=600, stale-while-revalidate=60");
-    return res.json(results);
+    const currentTime = new Date().getTime();
+    return res.json({
+      data: results,
+      informations: {
+        api_version: 2,
+        timestamp: currentTime,
+      },
+    });
   } catch (e) {
     res.status(500).json({ message: e.message });
   }
