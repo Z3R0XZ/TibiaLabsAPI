@@ -21,6 +21,31 @@ function VocationSet(str) {
   return voc;
 }
 
+function VocationPartySet(str) {
+  let voc;
+  switch (str.toLowerCase()) {
+    case "knight":
+    case "elite knight":
+      voc = "EK";
+      break;
+    case "paladin":
+    case "royal paladin":
+      voc = "RP";
+      break;
+    case "druid":
+    case "elder druid":
+      voc = "ED";
+      break;
+    case "sorcerer":
+    case "master sorcerer":
+      voc = "MS";
+      break;
+    default:
+      voc = "Rooker";
+  }
+  return voc;
+}
+
 function VocationStats(level, vocation) {
   const voc = VocationSet(vocation);
   const values = {
@@ -49,4 +74,4 @@ function VocationStats(level, vocation) {
   return values[voc];
 }
 
-export { VocationStats };
+export { VocationStats, VocationPartySet, VocationSet };
