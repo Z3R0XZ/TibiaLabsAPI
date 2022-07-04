@@ -13,9 +13,21 @@ function formatDate(date) {
   return dateToFormat.toLocaleDateString("en-GB", options);
 }
 
+function formatGuildDate(date) {
+  const options = { year: "numeric", month: "2-digit", day: "2-digit" };
+  const dateToFormat = new Date(date);
+  return dateToFormat.toLocaleDateString("en-GB", options);
+}
+
 async function CharacterInfo(name) {
   const res = await TibiaDataCrawler(`character/${name}`);
   const data = res["characters"]["character"];
+  return data;
+}
+
+async function GuildInfo(name) {
+  const res = await TibiaDataCrawler(`guild/${name}`);
+  const data = res["guilds"]["guild"];
   return data;
 }
 
@@ -43,4 +55,11 @@ async function AllWorldsInfo() {
   return res;
 }
 
-export { TibiaDataCrawler, CharacterInfo, WorldInfo, AllWorldsInfo };
+export {
+  TibiaDataCrawler,
+  formatGuildDate,
+  CharacterInfo,
+  GuildInfo,
+  WorldInfo,
+  AllWorldsInfo,
+};
