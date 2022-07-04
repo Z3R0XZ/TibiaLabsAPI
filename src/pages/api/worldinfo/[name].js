@@ -19,6 +19,6 @@ export default async function handler(req, res) {
       `${info.name} (${info.type}) was created on ${info.created}. Online record: ${info.record} on ${info.record_date}. There are ${info.players_online} players online.`
     );
   } else {
-    res.send(`The world ${info.name} doesn't exist.`);
+    res.send(`The world ${name} doesn't exist.`);
   }
 }
