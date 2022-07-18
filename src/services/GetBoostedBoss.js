@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 async function BoostedBoss() {
   try {
     const response = await fetch(
-      `https://www.test.tibia.com/library/?subtopic=boostablebosses`
+      `https://www.tibia.com/library/?subtopic=boostablebosses`
     );
 
     const htmlString = await response.text();
