@@ -1,25 +1,60 @@
-# API Routes Example with CORS
+# TibiaLabs API v2
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`.
+<div align="center"><img src="https://i.imgur.com/9jP3lNK.png"/></div>
 
-This example shows how to create an `API` endpoint with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) headers, using the [cors](https://github.com/expressjs/cors) package.
+TibiaLabs API written in `JavaScript` using `Next.js` and deployed in Vercel.
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-cors)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-cors&project-name=api-routes-cors&repository-name=api-routes-cors)
+This API documentation can be found on [docs.tibialabs.com](https://docs.tibialabs.com)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+If you aren't friendly with `Next.js`, it's recommended that you take a look at how to [get started](https://nextjs.org/docs/getting-started) with `Next.js`, since you are going to need `Node.js` installed.
 
-```bash
-npx create-next-app --example api-routes-cors api-routes-cors-app
-# or
-yarn create next-app --example api-routes-cors api-routes-cors-app
-# or
-pnpm create next-app --example api-routes-cors api-routes-cors-app
+After having it installed, if you are starting from a fresh clone of this repository, start with:
+
+```
+yarn
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+This will install all required `node_modules` to run it.
+
+### Local development
+
+Run your build locally using:
+
+```
+yarn dev
+```
+
+### Production
+
+Deploy it to the cloud with [Vercel](https://vercel.com/#get-started) ([Documentation](https://nextjs.org/docs/deployment)), learn more about it on their Documentation.
+
+## API Documentation
+
+This API documentation can be found on [docs.tibialabs.com](https://docs.tibialabs.com)
+
+### Avaiable endpoints
+
+- GET `/v2/charinfo/:name`
+- GET `/v2/partytracker/:name`
+- GET `/v2/sharelevel/:level`
+- GET `/v2/guildinfo/:name`
+- GET `/v2/worldinfo/:name`
+- GET `/v2/worldinfo/online/:name`
+- GET `/v2/worldinfo/online/all`
+- GET `/v2/boostedcreature`
+- GET `/v2/boostedcreature/name`
+- GET `/v2/boostedcreature/list`
+- GET `/v2/boostedboss`
+- GET `/v2/boostedboss/name`
+- GET `/v2/boostedboss/list`
+- GET `/v2/dreamscar`
+- GET `/v2/dreamscar/name`
+- GET `/v2/rashid`
+- GET `/v2/rashid/name`
+
+## Credits
+
+- Author: [Lucas Hames](https://github.com/wedz0ff)
+- Distributed under [MIT License](LICENSE)
