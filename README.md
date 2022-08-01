@@ -52,7 +52,7 @@ This API documentation can be found on [docs.tibialabs.com](https://docs.tibiala
 - GET `/v2/dreamscar`
 - GET `/v2/dreamscar/name`
 - GET `/v2/rashid`
-- GET `/v2/rashid/name`
+- GET `/v2/rashid/city`
 
 ## Credits
 
