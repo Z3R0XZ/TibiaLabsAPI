@@ -18,7 +18,7 @@ export default async function handler(req, res) {
 
   if (info.vocation != "") {
     res.send(
-      `Personaje: ${info.name} - Nivel: ${info.level} - Voc: ${info.vocation} - Mundo: ${info.world} - HP: ${infoVoc.hp} - MP: ${infoVoc.mp} - Cap: ${infoVoc.cap}`
+      `${info.name} [${info.level}] - ${info.vocation} - ${info.world}`
     );
   } else {
     res.send(`El Personaje ${name} no existe.`);
