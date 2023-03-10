@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   if (!isNaN(level) && level > 0) {
     const shareRange = SharedLevelRange(level);
     res.send(
-      `Un nivel ${level} puede compartir exp con niveles del ${shareRange["min"]} al ${shareRange["max"]}.`
+      `Un nivel ${level} comparte EXP con niveles del ${shareRange["min"]} al ${shareRange["max"]}.`
     );
   } else {
     res.send(`El nivel debe ser mayor a 0.`);
