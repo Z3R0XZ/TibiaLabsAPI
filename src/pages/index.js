@@ -10,15 +10,7 @@ export default function Index() {
       <p>
         <h1>TibiaLabs API v2</h1>
         <p>
-          Hey, you won't find anything here. We encourage you to access{" "}
-          <a href="https://tibialabs.com" target="_blank">
-            our website
-          </a>{" "}
-          or even our awesome{" "}
-          <a href="https://docs.tibialabs.com" target="_blank">
-            Documentation
-          </a>
-          .
+          No hay nada que ver aqui Kappa, cya.
         </p>
       </p>
     </div>

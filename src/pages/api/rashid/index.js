@@ -12,5 +12,5 @@ export default async function handler(req, res) {
   await cors(req, res);
   const currentCity = RashidCity();
   res.setHeader("Cache-Control", "s-maxage=300");
-  res.send(`Today Rashid is located on ${currentCity}.`);
+  res.send(`Rashid está en ${currentCity}.`);
 }

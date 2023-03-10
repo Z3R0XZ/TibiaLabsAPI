@@ -18,9 +18,9 @@ export default async function handler(req, res) {
 
   if (info.vocation != "") {
     res.send(
-      `Character: ${info.name} - Level: ${info.level} - Vocation: ${info.vocation} - World: ${info.world} - HP: ${infoVoc.hp} - MP: ${infoVoc.mp} - Cap: ${infoVoc.cap}`
+      `Personaje: ${info.name} - Nivel: ${info.level} - Voc: ${info.vocation} - Mundo: ${info.world} - HP: ${infoVoc.hp} - MP: ${infoVoc.mp} - Cap: ${infoVoc.cap}`
     );
   } else {
-    res.send(`The character ${name} doesn't exist.`);
+    res.send(`El Personaje ${name} no existe.`);
   }
 }
