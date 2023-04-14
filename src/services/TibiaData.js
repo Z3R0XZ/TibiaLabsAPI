@@ -59,6 +59,7 @@ export {
   TibiaDataCrawler,
   formatGuildDate,
   CharacterInfo,
+  Chars,
   GuildInfo,
   WorldInfo,
   AllWorldsInfo,
