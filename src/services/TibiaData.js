@@ -58,8 +58,7 @@ async function AllWorldsInfo() {
 export {
   TibiaDataCrawler,
   formatGuildDate,
-  CharacterInfo,
-  Chars,
+  CharacterInfo,  
   GuildInfo,
   WorldInfo,
   AllWorldsInfo,
